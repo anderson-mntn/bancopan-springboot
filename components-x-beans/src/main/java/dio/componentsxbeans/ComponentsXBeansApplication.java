@@ -17,7 +17,7 @@ public class ComponentsXBeansApplication {
 	public CommandLineRunner run(ConversonJson conversor) throws Exception {
 		return args -> {
 			String json = "{\"cep\": \"01001-000\",\"logradouro\": \"Praça da Sé\",\"localidade\": \"São Paulo\"}";
-			ViaCepResponse response = conversor.converter(json);
+			ViaCepResponse response = conversor.converter(json); //converte pra json com molde da class ViaCepResponse
 			System.out.println("Dados do CEP: " + response);
 		};
 	}
