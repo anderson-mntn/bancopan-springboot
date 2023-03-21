@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class MyApp implements CommandLineRunner{
 
     @Autowired
-    private Calculadora calculadora;
+    private Calculadora calculadora; // Já não precisamos dar new Calculadora ()
 
     @Override
     public void run(String... args) throws Exception {
