@@ -31,7 +31,8 @@ public class ParkingSpotModel implements Serializable{
     @Column(nullable = false, length = 10)
     private String apartment;
     @Column(nullable = false, length = 20)
-    private String block;
+    private String apBlock;
+
     
     public static long getSerialversionuid() {
         return serialVersionUID;
@@ -90,12 +91,13 @@ public class ParkingSpotModel implements Serializable{
     public void setApartment(String apartment) {
         this.apartment = apartment;
     }
-    public String getBlock() {
-        return block;
+    public String getApBlock() {
+        return apBlock;
     }
-    public void setBlock(String block) {
-        this.block = block;
+    public void setApBlock(String apBlock) {
+        this.apBlock = apBlock;
     }
+    
     
     
 }
