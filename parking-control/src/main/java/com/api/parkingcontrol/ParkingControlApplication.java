@@ -14,7 +14,7 @@ public class ParkingControlApplication {
 
 	@GetMapping("/")
 	public String index() {
-		return "Hello World from Index";
+		return "<h1 style='color: red;'>Hello World from Index!</h1>"; // arquivo html
 	}
 	
 }
